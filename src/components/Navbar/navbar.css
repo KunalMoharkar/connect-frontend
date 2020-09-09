@@ -1,0 +1,41 @@
+.nav-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 50px;
+    background-color:#08475F;
+    transition-duration: 700ms;
+}
+
+.navlinks-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.navlinks-container li{
+    list-style: none;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.navlinks-container li:hover{
+    color: white;
+}
+
+.nav-container:hover{
+    height:65px;
+}
+
+.nav-brand{
+    display: flex;
+    align-items: center;
+}
+
+.nav-brand p{
+    font-size: larger;
+}
