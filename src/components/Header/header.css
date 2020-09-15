@@ -1,0 +1,18 @@
+.header{
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    background-color:#08475F;
+    border-radius: 3px;
+    transition-duration: 700ms;
+}
+
+.header:hover{
+    box-shadow:2px 2px 5px 1px gray;
+}
+
+.header h2{
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin:0px;
+}

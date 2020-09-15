@@ -1,0 +1,11 @@
+.blog-details-text{
+    font-size: 18px;
+    margin-top: 1px;
+    text-align: justify;
+}
+
+.blog-details-footer{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}

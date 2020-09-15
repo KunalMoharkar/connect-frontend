@@ -20,10 +20,11 @@
     width: 120px;
     border-radius: 50%;
     border:3px solid white;
-    transform : translate(0px,60px);
+    transform : translate(60px,60px);
 }
 
 .profile-card-body{
+    text-align: center;
     margin-top: 70px;
     height:110px;
 }

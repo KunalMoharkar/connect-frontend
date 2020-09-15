@@ -1,5 +1,6 @@
 import React from 'react';
 import './profilecard.css';
+import {Link} from 'react-router-dom';
 import imgAvatar from '../../images/imgAvatar.jpeg';
 import {Button} from '../Button/button';
 import {Sociallinks} from '../Social-links/social-links';
@@ -15,7 +16,9 @@ export const Profilecard = ()=>{
                 <Sociallinks/>
             </div>
             <div className="profile-card-footer"> 
-                <Button text="View Profile"/>
+                <Link to={`/ProfileDetails/`}>
+                    <Button text="View Profile"/>
+                </Link>
             </div>   
         </div>
     )
