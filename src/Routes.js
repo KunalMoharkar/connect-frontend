@@ -14,7 +14,7 @@ export const Routes=()=>{
             <Route exact path={process.env.PUBLIC_URL+"/"} component={Home}/>
             <Route exact path={process.env.PUBLIC_URL+"/blogs/"} component={Blogs}/>
             <Route exact path={process.env.PUBLIC_URL+"/blogDetails/"} component={BlogDetails}/>
-            <Route exact path={process.env.PUBLIC_URL+"/profileDetails/"} component={ProfileDetails}/>
+            <Route exact path={process.env.PUBLIC_URL+"/profileDetails/:userId"} component={ProfileDetails}/>
         </Switch>
     )
 

@@ -1,11 +1,38 @@
-import React from 'react';
+import React, {useState,useEffect} from 'react';
 import './profileDetails.css';
 import imgAvatar from '../images/imgAvatar.jpeg';
 import { Sociallinks } from '../components/Social-links/social-links';
 import {Header} from '../components/Header/header';
 import {Button} from '../components/Button/button';
 
-export const ProfileDetails=()=>{
+export const ProfileDetails=(props)=>{
+
+
+    const [isLoaded, setIsLoaded] = useState(false);
+
+    const fetchData= async()=>{
+        try{
+            const response = await fetch(`http://localhost:5000/profiles/${props.match.params.userId}`);
+            const data = await response.json();
+            setIsLoaded(true);
+            console.log(props.match.params.userId);
+            console.log(data);
+
+        }
+        catch(err)
+        {
+            console.log("Error occured");
+        }
+    }
+
+
+    useEffect(()=>{
+        console.log(props.match.params.userId);
+        console.log("reched here");
+        fetchData();
+    },[])
+
+
     return(
         <div>
         <Header text="Profile"/>
