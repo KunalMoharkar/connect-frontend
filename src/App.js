@@ -15,7 +15,7 @@ export function App() {
   return (
     <div className="App">
       <Navbar/>
-      <Button text="View Profile"/>
+      <Button text="View profile"/>
       <Profilecard />
       <Salutation/>
       <Blogcard/>
